@@ -22,7 +22,7 @@ int main() {
 			}
 		}
 		if (isPrime) {
-				cout << i << '\n';
+			cout << i << '\n';
 		}
 	}
 	return 0;
