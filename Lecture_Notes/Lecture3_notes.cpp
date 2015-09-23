@@ -32,6 +32,50 @@ void printNum(int num) {
 }
 
 // Function overloading
+// Functions with the same name but different arguments
+// The function called is the one whose arguments
+// match the invocation
+void printOnNewLine(int x) {
+	cout << "Integer: " << x << '\n';
+}
 void printOnNewLine(char* x) {
+	cout << "String: " << x << '\n';
+}
 
+// Function declarations need to occur before invocations
+int foo() {
+	return bar()*2; //ERROR - bar hasn't been declared yet
+}
+int bar() {
+	return 3;
+}
+// Solution 1: reorder function declarations
+int bar() {
+	return 4;
+}
+int foo() {
+	return bar()*2; // ok
+}
+
+// Solution 2: use a function prototype
+// A function prototype informs the compiler
+// that you'll implement it later
+int bar(); // function prototype
+
+int foo() {
+	return bar()*2; // ok
+}
+int bar() {
+	return 3;
+}
+
+// Function prototypes should match the signature of the method
+// though argument names don't matter
+int square(int); // function prototype
+
+int cube(int x) {
+	return x*square(x);
+}
+int square(int x) {
+	return x*x;
 }
