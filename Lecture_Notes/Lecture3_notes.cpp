@@ -79,3 +79,90 @@ int cube(int x) {
 int square(int x) {
 	return x*x;
 }
+
+// Function prototypes are generally put into seperate header files
+
+// myLib.h - header
+// contains prototypes
+int square(int);
+int cube(int);
+
+// myLib.cpp - implementation
+#include "myLib.h"
+int cube(int x) {
+	return x*square(x);
+}
+int square(int x) {
+	return x*x;
+}
+
+/*
+Recursion
+• Functions can call themselves.
+• fib(n) = fib(n-1) + fib(n-2) can be easily
+expressed via a recursive implementation
+*/
+int fib(int x) {
+	if (n == 0 || n == 1) {
+		return 1; // base case
+	} else {
+		return fib(n-2) + fib(n-1); // recursive call
+	}
+}
+
+/* Pass by value vs. Pass by reference */
+
+// pass-by-value
+void increment(int a) {
+	++a;
+	cout << "a in increment " << a << '\n';
+}
+int main() {
+	int q = 3;
+	increment(q); // does nothing
+	cout << "q in main " << q << '\n';
+}
+// Output
+// a in increment 4
+// q in main 3
+
+// pass-by-reference
+void increment(int &a) {
+	++a;
+	cout << "a in increment " << a << '\n';
+}
+int main() {
+	int q = 3;
+	increment(q); // works
+	cout << "q in main " << q << '\n';
+}
+// Output
+// a in increment 4
+// q in main 4
+
+
+// Implementing swap
+void swap(int &a, int &b) {
+	int temp = a;
+	a = b;
+	b = temp;
+}
+
+int main() {
+	int q = 3;
+	int r = 5;
+	cout << "Before swap, q: " << q << ", r: " << r << '\n';
+	swap(q, r);
+	cout << "After swap, q: " << q << ", r: " << r << '\n';
+}
+
+/*
+Libraries
+• Libraries are generally distributed as the header file
+containing the prototypes, and a binary .dll/.so file containing
+the (compiled) implementation
+– Don’t need to share your .cpp code
+• Library user only needs to know the function prototypes (in
+the header file), not the implementation source code (in the
+.cpp file)
+*/
