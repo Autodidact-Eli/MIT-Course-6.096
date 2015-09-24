@@ -1,6 +1,7 @@
 /*
 Why define your own functions?
-• Readability: sqrt(5) is clearer than copy-pasting in an algorithm to compute the square root
+• Readability: sqrt(5) is clearer than copy-pasting in an algorithm to compute
+ the square root
 • Maintainability: To change the algorithm, just change the function
 (vs changing it everywhere you ever used it)
 • Code reuse: Lets other people use algorithms you’ve implemented
