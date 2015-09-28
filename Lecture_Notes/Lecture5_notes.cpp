@@ -99,5 +99,45 @@ const int * const = int const * const
 	 e.g. int * const bar - it's about the pointer
 */
 
+/*
+	Some pointers do not point to valid data
+	Dereferencing such a pointer is a runtime error
+	Any pointer set to 0 is called a "null pointer", and since there is no memory
+	location 0, it is an invalid pointer.
+	One Should generally check whether a pointer is null before dereferencing it
+	Pointers are often set to 0 to signal that they are not currently valid
+*/
+
+// When declaring a pointer, * is placed before the variable name to indicated
+// that the variable being declared is a pointer - say, a pointer to int or char,
+// not an int or char value
+
+// When using a pointer that has been set to point to some value, * is placed
+// before the pointer name to dereference it - to access or set the value it
+// points to
+
+// A similar distinction exists for &, which can be used either
+// 1. to indicate a reference data type (as in int &x;)
+// 2. to take the address of a variable (as in int *ptr = &x;)
 
 
+// Pointer Arithmetic is a way of using subtraction and addition of pointers to
+// move around between locations in memory, typically between array elements.
+// Adding an integer n to a pointer produces a new pointer pointing to n
+// positions further down in memory
+
+long arr[] = {6,0,9,6};
+long *ptr = arr;
+ptr++; 									// moves ptr to point to the second element of the array
+long *ptr2 = arr + 3;
+
+// When you set a char * to a string, you are really setting a pointer to
+// point to the first character in the array that holds the string
+
+// You cannot modify string literals, results in either a syntax or runtime error
+// You can however modify the contents of an array of characters, e.g.
+char courseName1[] = {'6','.','0','9','6','\0'};
+char *courseName2 = "6.096";
+// Attempting to modify one of the elements in courseName1 is permitted
+// But attempting to modify one of the characters in courseName2 will generate
+// a runtime error, causing the program to crash
