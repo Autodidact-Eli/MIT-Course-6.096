@@ -1,6 +1,7 @@
 // phantom is deallocated when myFunc exits, so the pointer
 // the function returns is invalid
-int *myFunc() {
+int *myFunc()
+{
 	int phantom = 4;
 	return &phantom;
 }
