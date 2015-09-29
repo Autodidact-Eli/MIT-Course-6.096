@@ -4,7 +4,7 @@ using namespace std;
 
 void f(const int a = 5)
 {
-	cout << a*2 << '\n';
+	cout << a*2 << " ";
 }
 
 int a = 123;
@@ -19,6 +19,7 @@ int main()
 	int a = 4;
 	f(a);
 	f();
+	cout << '\n';
 }
 // The program prints out
-// 2, 246, 6, 8, 10
+// 2 246 6 8 10
