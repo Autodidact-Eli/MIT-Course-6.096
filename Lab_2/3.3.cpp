@@ -1,4 +1,3 @@
-// (Give two ways to fix this code.)
 #include <iostream>
 using namespace std;
 
