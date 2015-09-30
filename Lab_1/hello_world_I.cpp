@@ -4,7 +4,8 @@ using namespace std;
 
 const char* message = "Hello, World!\n";
 
-int main() {
+int main()
+{
 	cout << message;
 	return 0;
 }

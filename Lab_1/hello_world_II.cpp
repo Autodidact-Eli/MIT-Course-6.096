@@ -1,14 +1,15 @@
 #include <iostream>
 
 using namespace std;
-/*
-Write a program that outputs “Hello, World!” n times
-(where n is a nonnegative integer that the user will input) with:
-• a for loop.
-• a while loop.
-• a do...while loop.
-*/
-int main() {
+
+// Write a program that outputs “Hello, World!” n times
+// (where n is a nonnegative integer that the user will input) with:
+//	• a for loop.
+//	• a while loop.
+//	• a do...while loop.
+
+int main()
+{
 	int n;
 	cin >> n;
 
