@@ -1,21 +1,19 @@
-/*
-3.2 Basic Statistics
-Given a list of N integers, find its mean (as a double), maximum value, minimum value,
-and range. Your program will first ask for N, the number of integers in the list, which the
-user will input. Then the user will input N more numbers.
+// 3.2 Basic Statistics
+// Given a list of N integers, find its mean (as a double), maximum value, minimum value,
+// and range. Your program will first ask for N, the number of integers in the list, which the
+// user will input. Then the user will input N more numbers.
 
-Here is a sample input sequence:
-3 <-- N
-2
-1
-3
+// Here is a sample input sequence:
+// 3 <-- N
+// 2
+// 1
+// 3
 
-Three numbers are given: 2, 1, 3. The output should be as follows:
-Mean: 2
-Max: 3
-Min: 1
-Range: 2
-*/
+// Three numbers are given: 2, 1, 3. The output should be as follows:
+// Mean: 2
+// Max: 3
+// Min: 1
+// Range: 2
 
 #include <iostream>
 #include <vector> 	 // for vector
@@ -23,7 +21,8 @@ Range: 2
 
 using namespace std;
 
-int main() {
+int main()
+{
 	vector<int> list;
 	double mean;
 	int N, input, max, min, range;
