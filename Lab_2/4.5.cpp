@@ -15,10 +15,9 @@ int sum(const int[] numbers, const int numbers_length)
 // (Hint: Think about how pointer arithmetic may help)
 int sum(const int[] numbers, const int numbers_length)
 {
-	int total_sum = 0;
-	if (numbers_length == 0) {
-		return total_sum;
-	} else {
-		total_sum += *numbers;
+	if (numbers_length == 0) { // base case
+		return 0;
+	} else { 	// TODO: implement recursive call
+
 	}
 }
