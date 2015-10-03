@@ -31,22 +31,22 @@ long long accumulator = 1;
 
 int main()
 {
-	int number;
-	cout << "Enter a number: ";
-	cin >> number;
+  int number;
+  cout << "Enter a number: ";
+  cin >> number;
 
-	if (number < 0) {
-		cout << "No negative inputs.\n";
-		return 1;
-	}
+  if (number < 0) {
+    cout << "No negative inputs.\n";
+    return 1;
+  }
 
-	if (number > 16) {
-		cout << "Program will not produce correct result!\n";
-	}
+  if (number > 16) {
+    cout << "Program will not produce correct result!\n";
+  }
 
-	cout << "The factorial of " << number << " is ";
-	for (; number > 0; accumulator *= number--);
-	cout << accumulator << "\n";
+  cout << "The factorial of " << number << " is ";
+  for (; number > 0; accumulator *= number--);
+  cout << accumulator << "\n";
 
-	return 0;
+  return 0;
 }
