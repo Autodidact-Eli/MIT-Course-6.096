@@ -7,9 +7,9 @@ using namespace std;
 // more preferable in new versions of C++
 void printNTimes(char *msg, int n)
 {
-	for (int i = 0; i < n; ++i) {
-		cout << msg << '\n';
-	}
+  for (int i = 0; i < n; ++i) {
+    cout << msg << '\n';
+  }
 }
 
 // Rather than writing printNTimes("Some message", 1); every time, C++ allows
@@ -20,23 +20,23 @@ void printNTimes(char *msg, int n)
 // The compiler automatically inserts 1 as the second argument
 void pintNTimes(char *msg, int n = 1)
 {
-	for (int i = 0; i < n; ++i) {
-		cout << msg << '\n';
-	}
+  for (int i = 0; i < n; ++i) {
+    cout << msg << '\n';
+  }
 }
 
 // You may have multiple default arguments for a function
 // With this we can simply write printNTimes();
 void pintNTimes(char *msg = "This is a default message", int n = 1)
 {
-	for (int i = 0; i < n; ++i) {
-		cout << msg << '\n';
-	}
+  for (int i = 0; i < n; ++i) {
+    cout << msg << '\n';
+  }
 }
 
 
 int main()
 {
-	printNTimes("Hello", 5);
-	return 0;
+  printNTimes("Hello", 5);
+  return 0;
 }
