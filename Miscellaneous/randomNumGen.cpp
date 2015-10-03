@@ -3,7 +3,7 @@
 // NOTE: These numbers are not truly random
 #include <iostream>
 #include <cstdlib> // C standard library -
-									 // defines rand(), srand(), RAND_MAX
+                   // defines rand(), srand(), RAND_MAX
 
 #include <ctime>   // C time functions - defines time()
 
@@ -11,17 +11,10 @@ using namespace std;
 
 int main()
 {
-	srand(time(0)); // set the seed
-									// time(0) returns current time as a number
+  srand(time(0)); // set the seed
+                  // time(0) returns current time as a number
 
-	int randNum = rand();
-	cout << "A random number: " << randNum << '\n';
-	return 0;
+  int randNum = rand();
+  cout << "A random number: " << randNum << '\n';
+  return 0;
 }
-
-
-
-
-
-
-
