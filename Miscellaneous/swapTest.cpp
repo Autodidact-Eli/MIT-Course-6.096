@@ -10,7 +10,8 @@ void swap(int &a, int &b)
 }
 
 // Program to demonstrate pass-by-reference using a swap method
-int main() {
+int main()
+{
   int x, y;
 
   cout << "Enter a value for x: ";
