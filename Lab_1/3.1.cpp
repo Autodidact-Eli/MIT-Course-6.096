@@ -2,18 +2,18 @@
 
 using namespace std;
 
-//1. Below is a sample program. Use it to answer the following question: What happens if
-//we declare the same name twice within a block, giving it two different meanings?
+// 1. Below is a sample program. Use it to answer the following question: What happens if
+// we declare the same name twice within a block, giving it two different meanings?
 
 int main()
 {
-	int arg1;
-	arg1 = -1;
-	int x, y, z;
-	char myDouble = '5';
-	char arg1 = 'A';
-	cout << arg1 << "\n";
-	return 0;
+  int arg1;
+  arg1 = -1;
+  int x, y, z;
+  char myDouble = '5';
+  char arg1 = 'A';
+  cout << arg1 << "\n";
+  return 0;
 }
 
 // Hints: Did your program compile? If so, what does it print? If not, what error
