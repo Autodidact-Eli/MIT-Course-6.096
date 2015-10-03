@@ -8,20 +8,20 @@ using namespace std;
 
 void setString(char **strPtr)
 {
-	int x;
-	cin >> x;
+  int x;
+  cin >> x;
 
-	if (x < 0)
-		*strPtr = "Negative!";
-	else
-		*strPtr = "Nonnegative!";
+  if (x < 0)
+    *strPtr = "Negative!";
+  else
+    *strPtr = "Nonnegative!";
 }
 
 int main()
 {
-	char *str;
-	setString(&str);
-	cout << str; 		 // string has been set to setString
-	cout << endl;
-	return 0;
+  char *str;
+  setString(&str);
+  cout << str;     // string has been set to setString
+  cout << endl;
+  return 0;
 }
