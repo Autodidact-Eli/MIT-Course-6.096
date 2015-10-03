@@ -16,40 +16,40 @@
 // Range: 2
 
 #include <iostream>
-#include <vector> 	 // for vector
+#include <vector>    // for vector
 #include <algorithm> // for sort()
 
 using namespace std;
 
 int main()
 {
-	vector<int> list;
-	double mean;
-	int N, input, max, min, range;
+  vector<int> list;
+  double mean;
+  int N, input, max, min, range;
 
-	cin >> N;
+  cin >> N;
 
-	while (N-- > 0) {
-		cin >> input;					 // read in input
-		list.push_back(input); // push input into vector
-		mean += input; 				 // add total to mean
-	}
+  while (N-- > 0) {
+    cin >> input;          // read in input
+    list.push_back(input); // push input into vector
+    mean += input;         // add total to mean
+  }
 
-	// sort the vector from least to greatest
-	// easier to work with the max/min/range
-	sort(list.begin(), list.end());
+  // sort the vector from least to greatest
+  // easier to work with the max/min/range
+  sort(list.begin(), list.end());
 
-	// compute values
-	mean /= list.size();
-	max = list[list.size()-1];
-	min = list[0];
-	range = max - min;
+  // compute values
+  mean /= list.size();
+  max = list[list.size()-1];
+  min = list[0];
+  range = max - min;
 
-	// output
-	cout << "Mean: " << mean << '\n';
-	cout << "Max: " << max << '\n';
-	cout << "Min: " << min << '\n';
-	cout << "Range: " << range << '\n';
+  // output
+  cout << "Mean: " << mean << '\n';
+  cout << "Max: " << max << '\n';
+  cout << "Min: " << min << '\n';
+  cout << "Range: " << range << '\n';
 
-	return 0;
+  return 0;
 }
