@@ -4,13 +4,13 @@ using namespace std;
 
 int main()
 {
-	printNum(35);
-	return 0;
+  printNum(35);
+  return 0;
 }
 
 void printNum(int number)
 {
-	cout << number << '\n';
+  cout << number << '\n';
 }
 
 // Solution 1, move implementation of the function printNum() above main
