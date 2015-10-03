@@ -6,6 +6,6 @@ const char* message = "Hello, World!\n";
 
 int main()
 {
-	cout << message;
-	return 0;
+  cout << message;
+  return 0;
 }
