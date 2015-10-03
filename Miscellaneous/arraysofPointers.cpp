@@ -6,14 +6,14 @@ using namespace std;
 // One common application of this is arrays of strings, e.g. arrays of char *'s
 int main()
 {
-const char *suitNames[] = {"Clubs", "Diamonds", "Spades", "Hearts"};
+  const char *suitNames[] = {"Clubs", "Diamonds", "Spades", "Hearts"};
 
-cout << "Enter a suit number (1-4): ";
-unsigned int suitNum;
-cin >> suitNum;
+  cout << "Enter a suit number (1-4): ";
+  unsigned int suitNum;
+  cin >> suitNum;
 
-if (suitNum <= 4)
-	cout << suitNames[suitNum-1] << '\n';
+  if (suitNum <= 4)
+  cout << suitNames[suitNum-1] << '\n';
 
-return 0;
+  return 0;
 }
