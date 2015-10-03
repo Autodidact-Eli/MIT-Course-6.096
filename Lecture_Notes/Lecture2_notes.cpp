@@ -1,20 +1,14 @@
-/*
-	Control structures are portions of program code that contain
-	statements within them and, depending on the circumstances, execute
-	these statements in a certain way.  There are typically two kinds:
-	->conditionals and loops
-*/
+// Control structures are portions of program code that contain
+// statements within them and, depending on the circumstances, execute
+// these statements in a certain way.  There are typically two kinds:
+// --> conditionals and loops
 
-/*
-	Conditionals allow the program to check the values of variables
-	and to execute (or not execute) certain statements.
-	C++ has 'if' and 'switch-case' conditional structures.
-*/
+// Conditionals allow the program to check the values of variables
+// and to execute (or not execute) certain statements.
+// C++ has 'if' and 'switch-case' conditional structures.
 
-/*
-	Conditionals use two kinds of special operators: relational and logical.
-	These are used to determine whether some condition is true(1) or false(0)
-*/
+// Conditionals use two kinds of special operators: relational and logical.
+// These are used to determine whether some condition is true(1) or false(0)
 
 // Here are some relational operators
 >, >=, <, <=, ==, !=
@@ -30,9 +24,9 @@
 
 // The 'if' conditional has the form
 if (condtion) {
-	// if the condition evaluates to true
-	// this code executes
-	some_code();
+  // if the condition evaluates to true
+  // this code executes
+  some_code();
 }
 
 // The if-else form is used to decide between two blocks
@@ -41,35 +35,35 @@ if (condtion) {
 // Because the condition is either satisfied or not, one of the
 // blocks in an if-else statement must execute.
 if (condition) {
-	some_code();
+  some_code();
 } else {
-	some_other_code();
+  some_other_code();
 }
 
 // The else-if is used to decide between two ore more blocks
 // based on multiple conditions
 if (condition1) {
-	some_code();
+  some_code();
 } else if (condition2) {
-	more_code();
+  more_code();
 } else {
-	even_more_code();
+  even_more_code();
 }
 
 // The switch-case is another conditional structure
 switch (expression) {
-	case one:
-		statementA1();
-		statementA2();
-		break;
-	case two:
-		statementB1();
-		statementB2();
-		break;
-	default:
-		statementC1();
-		statementC2();
-		break;
+  case one:
+    statementA1();
+    statementA2();
+    break;
+  case two:
+    statementB1();
+    statementB2();
+    break;
+  default:
+    statementC1();
+    statementC2();
+    break;
 }
 
 // Loops execute certain statements while certain conditions are met
@@ -79,7 +73,7 @@ switch (expression) {
 // As long as the condition holds, the block of statements
 // will be repeatedly executed.
 while (condition) {
-	execute_code();
+  execute_code();
 }
 
 // The do-while loop is a variation that guarantees the block of
@@ -87,12 +81,12 @@ while (condition) {
 // The block of statements is executed and then, if the condition holds,
 // the program returns to the top of the block
 do {
-	some_code();
+  some_code();
 } while (condition);
 
 // The for loop works like the while loop but with some
 // change in syntax
 for (initialization; condition; incrementation) {
-	some_code();
-	some_more_code();
+  some_code();
+  some_more_code();
 }
