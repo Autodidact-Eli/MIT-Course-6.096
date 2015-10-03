@@ -7,20 +7,20 @@ using namespace std;
 // to be const
 void print(const int n)
 {
-	cout << n << '\n';
+  cout << n << '\n';
 }
 
 void print(const long &x) // pass-by-reference avoids overhead
-{													// of copying large number
-	cout << n << '\n';
+{                         // of copying large number
+  cout << n << '\n';
 }
 
 int main()
 {
-	long x = 234923592;
-	print(x); 					// We are guaranteed that x
-											// will not be changed by this
-	return 0;
+  long x = 234923592;
+  print(x);           // We are guaranteed that x
+                      // will not be changed by this
+  return 0;
 }
 
 // In general, if you know a value shouldn't be changing (particularly in a
