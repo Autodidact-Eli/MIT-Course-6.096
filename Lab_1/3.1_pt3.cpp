@@ -8,13 +8,13 @@ using namespace std;
 
 int main()
 {
-	int arg1;
-	arg1 = -1;
-	{
-		char arg1 = 'A';
-		cout << arg1 << "\n";
-	}
-	return 0;
+  int arg1;
+  arg1 = -1;
+  {
+    char arg1 = 'A';
+    cout << arg1 << "\n";
+  }
+  return 0;
 }
 
 // The declaration used inside the inner block is accessed.
