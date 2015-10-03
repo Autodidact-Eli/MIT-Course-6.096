@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstdlib> // C standard library -
-									 // defines rand(), srand(), RAND_MAX
+                   // defines rand(), srand(), RAND_MAX
 
 #include <ctime>   // C time functions - defines time()
 
@@ -14,13 +14,13 @@ using namespace std;
 
 int *getRandNumPtr()
 {
-	int x = rand();
-	return &x;
+  int x = rand();
+  return &x;
 }
 
 int main()
 {
-	int *randNumPtr = getRandNumPtr();
-	cout << *randNumPtr << '\n'; // ERROR
-	return 0;
+  int *randNumPtr = getRandNumPtr();
+  cout << *randNumPtr << '\n'; // ERROR
+  return 0;
 }
