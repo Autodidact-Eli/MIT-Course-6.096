@@ -4,15 +4,15 @@ using namespace std;
 
 void printNum()
 {
-	cout << number;
+  cout << number;
 };
 
 int main()
 {
-	int number = 35;
-	printNum(number);
-	cout << '\n';
-	return 0;
+  int number = 35;
+  printNum(number);
+  cout << '\n';
+  return 0;
 }
 
 // Solution 1, make the function printNum() take an argument of int type
