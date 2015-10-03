@@ -39,7 +39,7 @@ double some_double; // range +/-1.7e +/-308 (15 digits)
 
 // A signed integer is one that can represent a negative number
 // An unsigned integer will never be interpreted as negative, so it
-// can represent a wider range of positive nummbers
+// can represent a wider range of positive numbers
 
 // There are 3 integer types: short, int, long
 // There are 3 floating point types: float, double, long double
